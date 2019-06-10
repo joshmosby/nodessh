@@ -28,5 +28,5 @@ LOGS_LOGLEVEL=info \
 LOGS_INSIGHT_KEY=
 
 # EXPOSE 3000
-ENTRYPOINT ["/opt/startup/init_container.sh"]
+ENTRYPOINT ["../init_container.sh"]
 
