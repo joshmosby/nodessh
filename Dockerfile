@@ -3,6 +3,8 @@ FROM appsvc/node:latest
  COPY sshd_config /etc/ssh/
 
  COPY init_container.sh /bin/
+ 
+ RUN chmod -R +x /bin/
 
 # RUN apt-get update \ 
 # && apt-get install -y --no-install-recommends openssh-server \ && echo "root:Docker!" | chpasswd
@@ -28,5 +30,5 @@ LOGS_LOGLEVEL=info \
 LOGS_INSIGHT_KEY=
 
 # EXPOSE 3000
-ENTRYPOINT ["init_container.sh"]
+ENTRYPOINT ["./bin/init_container.sh"]
 
