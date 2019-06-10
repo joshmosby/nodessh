@@ -1,0 +1,8 @@
+{
+    "name": "api-gateway",
+    "script": "bin/www",
+    "instances": "0",
+    "node_args": "--max-http-header-size=1024000",
+    "env": {
+    }
+  }

@@ -1,0 +1,10 @@
+{
+    "AWSEBDockerrunVersion": "1",
+    "Image": {
+        "Name": "237182843535.dkr.ecr.eu-west-1.amazonaws.com/poc-apro-gw:1.2",
+        "Update": "true"
+    },
+    "Ports": [{
+        "ContainerPort": 3000
+    }]
+}
